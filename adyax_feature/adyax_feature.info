@@ -1,0 +1,11 @@
+name = Adyax feature
+description = Represents export of setting related to footnote functionality.
+core = 7.x
+package = Features
+version = 7.x-1.0
+dependencies[] = ckeditor
+features[ckeditor_profile][] = Advanced
+features[ckeditor_profile][] = CKEditor Global Profile
+features[ckeditor_profile][] = Full
+features[features_api][] = api:2
+project path = sites/all/modules/adyax_footnotes
