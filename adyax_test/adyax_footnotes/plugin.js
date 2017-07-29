@@ -30,7 +30,7 @@
                   'default': '',
                   setup: function( element ) {
                     this.setValue( element.getText() );
-                  },
+                  }
                 }
               ]
             }
@@ -85,13 +85,14 @@
       editor.on('selectionChange', function (event) {
         var text = event.data.selection.getSelectedText(),
             editor = event.editor;
-        if (text !== "") {
-          debugger;
-          editor.commands['adyaxFootnotesCommand'].setState(CKEDITOR.TRISTATE_ON)
-        }
-        else {
-          editor.commands['adyaxFootnotesCommand'].setState(CKEDITOR.TRISTATE_DISABLED)
-        }
+        // Looks that this approach very unstable.
+        // if (text !== "") {
+        //   debugger;
+        //   editor.commands['adyaxFootnotesCommand'].setState(CKEDITOR.TRISTATE_ON)
+        // }
+        // else {
+        //   editor.commands['adyaxFootnotesCommand'].setState(CKEDITOR.TRISTATE_DISABLED)
+        // }
       });
 
       // @todo Add context menu for adding possibility to edit.
