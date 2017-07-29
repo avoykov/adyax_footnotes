@@ -7,7 +7,7 @@ Contains 2 module:
 2) Adyax test - contains definition of plugin.
 
 ## Install
-1) Enable bot of modules.
+1) Enable Adyax test module.
 
 ## Issues
 1) Add possibility to edit footnotes via dialog window.
