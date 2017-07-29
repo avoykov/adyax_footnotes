@@ -1,0 +1,18 @@
+#af-list {
+  list-style: none;
+}
+
+a.afr-item {
+  background-image: url('up.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent;
+  padding: 5px;
+  background-position: center;
+  margin-right: 5px;
+}
+
+a.afr-item:hover {
+  color: transparent;
+}
+

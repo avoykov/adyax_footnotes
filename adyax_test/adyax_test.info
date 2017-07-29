@@ -1,0 +1,6 @@
+name = "Adyax test"
+description = "Represents plugin for CKeditor which allows to add footnotes"
+package = User interface
+version = "7.x-2.5"
+core = "7.x"
+dependencies[] = adyax_feature

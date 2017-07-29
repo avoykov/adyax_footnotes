@@ -1,0 +1,33 @@
+<?php
+/**
+ * @file
+ * Contains hook implemention and common methods.
+ */
+/**
+ * Implements hook_ckeditor_plugin().
+ */
+function adyax_test_ckeditor_plugin() {
+  $path = base_path() . drupal_get_path('module', 'adyax_test') . '/adyax_footnotes/';
+  return [
+    'adyaxFootnotes' => [
+      'name' => 'adyaxFootnotes',
+      'desc' => t('Represents plugin for adding footnotes.'),
+      'path' => $path,
+      'buttons' => [
+        'adyaxFootnotesButton' => [
+          'label' => 'Add a footnote',
+          'icon' => '',
+        ],
+      ],
+    ]
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ * @todo may be we need a config form for defining availability of footnote ?
+ */
+function adyax_test_preprocess_node(&$variables) {
+  $path = drupal_get_path('module', 'adyax_test') . '/assets/adyax_test.css';
+  drupal_add_css($path);
+}
